@@ -1,0 +1,11 @@
+[submodule "Alpha/css/boost"]
+    path = Alpha/css/boost
+    url = git://github.com/Kan-A-Pesh/css-boilerplate.git
+
+[submodule "Beta/css/boost"]
+    path = Beta/css/boost
+    url = git://github.com/Kan-A-Pesh/css-boilerplate.git
+
+[submodule "Gamma/css/boost"]
+    path = Gamma/css/boost
+    url = git://github.com/Kan-A-Pesh/css-boilerplate.git
