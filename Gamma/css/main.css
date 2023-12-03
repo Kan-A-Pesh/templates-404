@@ -1,0 +1,132 @@
+@import url("themes/palette.css");
+
+@import url("boost/index.css");
+@import url("https://fonts.googleapis.com/css?family=Space+Grotesk:300,400,700");
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.justify {
+    text-align: justify;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "prfl prfl pict pict"
+        "desc desc pict pict"
+        "desc desc pict pict"
+        "socl socl socl foot";
+
+    height: 100vh;
+    width: 100vw;
+    gap: calc(var(--margins) * 0.25);
+    padding: calc(var(--margins) * 0.25);
+}
+
+main > * {
+    background-color: #fff2;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 16px;
+}
+
+.profile {
+    grid-area: prfl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    gap: 8px;
+}
+
+.profile img {
+    border-radius: 16px;
+    height: 128px;
+    width: 128px;
+}
+
+.description {
+    grid-area: desc;
+    padding: 32px;
+}
+
+.pictures {
+    grid-area: pict;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 16px;
+    padding-bottom: 16px;
+    overflow-y: auto;
+}
+
+.pictures > * {
+    padding-top: 16px;
+    width: 100%;
+}
+
+.socials {
+    grid-area: socl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 16px;
+}
+
+footer {
+    grid-area: foot;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+p {
+    line-height: calc(48px * var(--unit));
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "prfl"
+            "desc"
+            "pict"
+            "pict"
+            "pict"
+            "pict"
+            "socl"
+            "foot";
+    }
+
+    .profile img {
+        height: 96px;
+        width: 96px;
+    }
+
+    .socials {
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .profile {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+a {
+    color: #eee;
+}
+
+a:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+}

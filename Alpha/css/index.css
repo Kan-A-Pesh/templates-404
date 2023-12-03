@@ -1,0 +1,78 @@
+@import url("./themes/palette.css");
+
+@import url("./boost/index.css");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700");
+
+@import url("./base/scroll.css");
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+    background: url("../assets/background.png");
+}
+
+.section {
+    padding: calc(var(--margins) * 0.75) 24px;
+}
+
+.section > *:not(:last-child) {
+    margin-bottom: 48px;
+}
+
+.card {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+main {
+    background-size: 50px 50px;
+    background-position: center;
+    background-image: linear-gradient(45deg, #ececec, #ececec 50%, #ffffff 50%, #ffffff);
+}
+
+.justify {
+    text-align: justify;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+
+    gap: 16px;
+}
+
+a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.credits {
+    gap: 0;
+    color: #999999;
+}
+.credits a {
+    color: #666666;
+}

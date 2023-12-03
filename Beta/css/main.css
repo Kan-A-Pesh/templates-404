@@ -1,0 +1,77 @@
+@import url("./themes/palette.css");
+
+@import url("./boost/index.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+body {
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+#hero {
+    height: 100vh;
+}
+
+#content {
+    margin-top: calc(var(--margins) * 0.5);
+}
+
+.card {
+    padding: var(--margins) 24px;
+    display: flex;
+    justify-content: center;
+}
+
+footer.card {
+    padding: calc(var(--margins) * 0.25) 24px;
+}
+
+.card > div {
+    max-width: 992px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.white {
+    background-color: var(--color-white);
+    color: var(--color-black-1);
+}
+
+.black {
+    background-color: var(--color-black-1);
+    color: var(--color-white);
+}
+
+.card > .socials {
+    flex-direction: row;
+    gap: 24px;
+}
+
+a:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.justify {
+    text-align: justify;
+}
+
+footer p {
+    color: var(--color-black-2);
+}
+
+a {
+    color: var(--color-black-3);
+}
+
+.pictures {
+    gap: calc(var(--margins) * 0.5);
+}
+
+.pictures > img {
+    width: 100%;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jour #X</title>
+
+        <script>
+            const assoName = ["LA", "404", "DEVINCI"];
+            const canvasTime = 2500;
+            const canvasParallax = 35;
+        </script>
+
+        <script src="js/canvas.js" defer></script>
+        <script src="js/main.js" defer></script>
+        <script src="https://unpkg.com/feather-icons"></script>
+
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div id="hero">
+            <!-- From https://codepen.io/ara_node/pen/DdNQqQ -->
+            <canvas id="canvas" style="position: absolute; top: 0; left: 0"></canvas>
+            <div id="buffer" style="display: none"></div>
+        </div>
+
+        <div id="content">
+            <div class="card black">
+                <div>
+                    <img src="assets/logo.png" alt="Logo" width="128px" />
+                    <br />
+
+                    <h2>La 404 Devinci</h2>
+                    <p>La 404, c'est l'association de développement web du Pôle !</p>
+                </div>
+            </div>
+
+            <div class="card white">
+                <div>
+                    <p class="justify">
+                        Elle a pour vocation de réunir les étudiants intéressés par le développement web et ses technologies et de faire
+                        découvrir aux étudiants en général le domaine du développement web, aujourd’hui trop peu connu.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card black">
+                <div class="pictures">
+                    <img src="assets/image-1.jpg" alt="Image 1" width="128px" />
+                    <img src="assets/image-2.png" alt="Image 2" width="128px" />
+                    <img src="assets/image-3.jpg" alt="Image 3" width="128px" />
+                </div>
+            </div>
+
+            <div class="card white">
+                <div class="socials">
+                    <a href="https://www.instagram.com/la404devinci/" target="_blank">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/la404devinci/" target="_blank">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/la404devinci" target="_blank">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="https://twitch.tv/la404devinci" target="_blank">
+                        <i data-feather="twitch"></i>
+                    </a>
+                </div>
+            </div>
+
+            <footer class="card black">
+                <p>Made by <a href="https://github.com/Kan-A-Pesh" target="_blank">Kan-A-Pesh</a></p>
+            </footer>
+        </div>
+    </body>
+</html>
